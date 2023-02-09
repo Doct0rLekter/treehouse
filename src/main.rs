@@ -12,7 +12,7 @@ fn get_name() -> String {
 }
 
 fn main() {
-    let the_list = ["ben", "jerry", "alice"];
+    let the_list = ["benji", "ben", "jerry", "alice"];
 
     let name = get_name();
     let mut on_the_list = false;
@@ -22,8 +22,8 @@ fn main() {
         }
     }
     if on_the_list {
-        println!("Welcome, {name}!");
+        println!("Welcome to the treehouse, {name}!");
     } else {
-        println!("Get out!");
+        println!("Get the, f*ck, out of our secret base!");
     }
 }
