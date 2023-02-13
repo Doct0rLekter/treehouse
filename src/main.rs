@@ -2,6 +2,14 @@
 
 use std::io::{self, stdin, Write};
 
+#[derive(Debug)]
+enum VisitorAction {
+    Accept,
+    AcceptWithNote { note: String },
+    Refuse,
+    Probation,
+}
+
 fn get_name() -> String {
     let mut your_name = String::new();
     print!("What's your name? ");
